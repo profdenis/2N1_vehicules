@@ -4,9 +4,14 @@ package vehicules;
 public class Moto extends VehiculeMotorise {
     private int cylindree;
 
-    public Moto(String nom, int vitesseMax, int puissance, int cylindree) {
-        super(nom, vitesseMax, puissance);
+    public Moto(String nom, int vitesseMax, String couleur, int poids, int puissance, String typeCarburant, int nombreDePassagers, int cylindree) {
+        super(nom, vitesseMax, couleur, poids, puissance, typeCarburant, nombreDePassagers);
         this.cylindree = cylindree;
+    }
+
+    @Override
+    public void demarrer() {
+        System.out.println("La moto est démarrée.");
     }
 
     @Override
@@ -14,3 +19,6 @@ public class Moto extends VehiculeMotorise {
         return super.toString() + "\nCylindrée: " + cylindree + " cm³";
     }
 }
+
+
+

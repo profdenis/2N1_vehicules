@@ -4,8 +4,8 @@ package vehicules;
 public class PatinsARoulettes extends VehiculeNonMotorise {
     private int nombreDeRoues;
 
-    public PatinsARoulettes(String nom, int vitesseMax, int nombreDeRoues) {
-        super(nom, vitesseMax, "Poussée");
+    public PatinsARoulettes(String nom, int vitesseMax, String couleur, int poids, int nombreDeRoues) {
+        super(nom, vitesseMax, couleur, poids, "Poussée");
         this.nombreDeRoues = nombreDeRoues;
     }
 
@@ -14,3 +14,4 @@ public class PatinsARoulettes extends VehiculeNonMotorise {
         return super.toString() + "\nNombre de roues: " + nombreDeRoues;
     }
 }
+

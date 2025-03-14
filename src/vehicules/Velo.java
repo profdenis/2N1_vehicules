@@ -4,8 +4,8 @@ package vehicules;
 public class Velo extends VehiculeNonMotorise {
     private int nombreDeVitesses;
 
-    public Velo(String nom, int vitesseMax, int nombreDeVitesses) {
-        super(nom, vitesseMax, "Pédalage");
+    public Velo(String nom, int vitesseMax, String couleur, int poids, int nombreDeVitesses) {
+        super(nom, vitesseMax, couleur, poids, "Pédalage");
         this.nombreDeVitesses = nombreDeVitesses;
     }
 
