@@ -9,6 +9,14 @@ public class Velo extends VehiculeNonMotorise {
         this.nombreDeVitesses = nombreDeVitesses;
     }
 
+    public int getNombreDeVitesses() {
+        return nombreDeVitesses;
+    }
+
+    public void setNombreDeVitesses(int nombreDeVitesses) {
+        this.nombreDeVitesses = nombreDeVitesses;
+    }
+
     @Override
     public String toString() {
         return super.toString() + "\nNombre de vitesses: " + nombreDeVitesses;

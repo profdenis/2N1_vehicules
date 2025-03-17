@@ -9,6 +9,14 @@ public class Moto extends VehiculeMotorise {
         this.cylindree = cylindree;
     }
 
+    public int getCylindree() {
+        return cylindree;
+    }
+
+    public void setCylindree(int cylindree) {
+        this.cylindree = cylindree;
+    }
+
     @Override
     public void demarrer() {
         System.out.println("La moto est démarrée.");

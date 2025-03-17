@@ -9,6 +9,14 @@ public class Camion extends VehiculeMotorise {
         this.capaciteDeCharge = capaciteDeCharge;
     }
 
+    public int getCapaciteDeCharge() {
+        return capaciteDeCharge;
+    }
+
+    public void setCapaciteDeCharge(int capaciteDeCharge) {
+        this.capaciteDeCharge = capaciteDeCharge;
+    }
+
     @Override
     public void demarrer() {
         System.out.println("Le camion est démarré.");

@@ -12,6 +12,22 @@ public class Caleche extends VehiculeNonMotorise {
         this.nombreDeChevaux = nombreDeChevaux;
     }
 
+    public String getTypeAnimal() {
+        return typeAnimal;
+    }
+
+    public void setTypeAnimal(String typeAnimal) {
+        this.typeAnimal = typeAnimal;
+    }
+
+    public int getNombreDeChevaux() {
+        return nombreDeChevaux;
+    }
+
+    public void setNombreDeChevaux(int nombreDeChevaux) {
+        this.nombreDeChevaux = nombreDeChevaux;
+    }
+
     @Override
     public String toString() {
         return super.toString() + "\nType d'animal: " + typeAnimal + "\nNombre de chevaux: " + nombreDeChevaux;

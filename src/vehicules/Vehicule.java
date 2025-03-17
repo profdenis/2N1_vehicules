@@ -1,7 +1,8 @@
 package vehicules;
 
 // Classe parente Vehicule
-class Vehicule {
+public class Vehicule {
+    protected String type;
     protected String nom;
     protected int vitesseMax;
     protected int vitesseCourante;
@@ -13,6 +14,55 @@ class Vehicule {
         this.vitesseMax = vitesseMax;
         this.vitesseCourante = 0; // Initialisation à 0
         this.couleur = couleur;
+        this.poids = poids;
+        this.type = getClass().getSimpleName();
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public int getVitesseMax() {
+        return vitesseMax;
+    }
+
+    public void setVitesseMax(int vitesseMax) {
+        this.vitesseMax = vitesseMax;
+    }
+
+    public int getVitesseCourante() {
+        return vitesseCourante;
+    }
+
+    public void setVitesseCourante(int vitesseCourante) {
+        this.vitesseCourante = vitesseCourante;
+    }
+
+    public String getCouleur() {
+        return couleur;
+    }
+
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
+    }
+
+    public int getPoids() {
+        return poids;
+    }
+
+    public void setPoids(int poids) {
         this.poids = poids;
     }
 
@@ -35,7 +85,7 @@ class Vehicule {
 
     @Override
     public String toString() {
-        return "Nom du véhicule: " + nom + "\nVitesse maximale: " + vitesseMax + " km/h\nVitesse courante: " + vitesseCourante + " km/h\nCouleur: " + couleur + "\nPoids: " + poids + " kg";
+        return "Type: " + type + "\nNom du véhicule: " + nom + "\nVitesse maximale: " + vitesseMax + " km/h\nVitesse courante: " + vitesseCourante + " km/h\nCouleur: " + couleur + "\nPoids: " + poids + " kg";
     }
 }
 

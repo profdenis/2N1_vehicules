@@ -9,6 +9,14 @@ public class PatinsARoulettes extends VehiculeNonMotorise {
         this.nombreDeRoues = nombreDeRoues;
     }
 
+    public int getNombreDeRoues() {
+        return nombreDeRoues;
+    }
+
+    public void setNombreDeRoues(int nombreDeRoues) {
+        this.nombreDeRoues = nombreDeRoues;
+    }
+
     @Override
     public String toString() {
         return super.toString() + "\nNombre de roues: " + nombreDeRoues;

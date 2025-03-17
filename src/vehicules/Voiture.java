@@ -10,6 +10,14 @@ public class Voiture extends VehiculeMotorise {
         this.nombreDePortes = nombreDePortes;
     }
 
+    public int getNombreDePortes() {
+        return nombreDePortes;
+    }
+
+    public void setNombreDePortes(int nombreDePortes) {
+        this.nombreDePortes = nombreDePortes;
+    }
+
     @Override
     public void demarrer() {
         System.out.println("La voiture est démarrée.");

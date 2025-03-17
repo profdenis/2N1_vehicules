@@ -1,7 +1,7 @@
 package vehicules;
 
 // Classe fille pour les véhicules motorisés
-class VehiculeMotorise extends Vehicule {
+public class VehiculeMotorise extends Vehicule {
     private int puissance;
     private String typeCarburant;
     private int nombreDePassagers;
@@ -10,6 +10,30 @@ class VehiculeMotorise extends Vehicule {
         super(nom, vitesseMax, couleur, poids);
         this.puissance = puissance;
         this.typeCarburant = typeCarburant;
+        this.nombreDePassagers = nombreDePassagers;
+    }
+
+    public int getPuissance() {
+        return puissance;
+    }
+
+    public void setPuissance(int puissance) {
+        this.puissance = puissance;
+    }
+
+    public String getTypeCarburant() {
+        return typeCarburant;
+    }
+
+    public void setTypeCarburant(String typeCarburant) {
+        this.typeCarburant = typeCarburant;
+    }
+
+    public int getNombreDePassagers() {
+        return nombreDePassagers;
+    }
+
+    public void setNombreDePassagers(int nombreDePassagers) {
         this.nombreDePassagers = nombreDePassagers;
     }
 
