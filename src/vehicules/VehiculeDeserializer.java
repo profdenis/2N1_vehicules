@@ -8,15 +8,6 @@ public class VehiculeDeserializer implements JsonDeserializer<Vehicule> {
 
     private static final String CLASS_PROPERTY_NAME = "type";
 
-//    @Override
-//    public JsonElement serialize(Vehicule src, Type typeOfSrc, JsonSerializationContext context) {
-//        JsonElement retValue = context.serialize(src);
-//        if (retValue.isJsonObject()) {
-//            retValue.getAsJsonObject().addProperty(CLASS_PROPERTY_NAME, src.getClass().getSimpleName());
-//        }
-//        return retValue;
-//    }
-
     @Override
     public Vehicule deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         JsonObject jsonObject = json.getAsJsonObject();

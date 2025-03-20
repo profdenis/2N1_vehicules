@@ -1,6 +1,5 @@
 package vehicules;
 
-
 // Classe fille pour les calèches (non-motorisées)
 public class Caleche extends VehiculeNonMotorise {
     private String typeAnimal;

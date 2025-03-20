@@ -14,7 +14,10 @@ public class GestionnaireVehicules {
     public GestionnaireVehicules() {
         this.vehicules = new ArrayList<>();
 
+        // si on n'utilise pas VehiculeDeserializer, tous les objets chargés vont directement être de type Vehicule
+        // et non pas des instances de Moto, Velo, ...
         this.gson = new GsonBuilder()
+                .setPrettyPrinting()
                 .registerTypeAdapter(Vehicule.class, new VehiculeDeserializer())
                 .create();
     }

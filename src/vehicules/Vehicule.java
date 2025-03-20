@@ -2,7 +2,7 @@ package vehicules;
 
 // Classe parente Vehicule
 public class Vehicule {
-    protected String type;
+    protected String type; // ajouté pour faciliter la désérialisation du JSON vers une liste de véhicules
     protected String nom;
     protected int vitesseMax;
     protected int vitesseCourante;
